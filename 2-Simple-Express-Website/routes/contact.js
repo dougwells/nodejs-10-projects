@@ -8,11 +8,11 @@ router.get('/', function(req, res, next) {
   res.render('contact', { title: 'Contact' });
 });
 
-//Send Email
-//put username & password in secrets file
-//(see format for secrets.jsx in comments at bottom of this page)
-//need application specific password if using gmail.  See link below for details
-//https://support.google.com/accounts/answer/185833?hl=en&ctx=ch_DisplayUnlockCaptcha
+// Send Email
+// put username & password in secrets file
+// (see format for secrets.jsx in comments at bottom of this page)
+// need application specific password if using gmail.  See link below for details
+// https://support.google.com/accounts/answer/185833?hl=en&ctx=ch_DisplayUnlockCaptcha
 
 router.post('/send', function(req, res, next){
   //create reusable transporter
